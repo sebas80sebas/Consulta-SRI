@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --- RESET Y ESTILO BASE --- */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, #f0f9ff, #ffffff, #e0f2fe);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Tipografía y color base */
+body {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color: #1e293b; /* texto gris oscuro */
+}
+
+/* Enlaces */
+a {
+  font-weight: 500;
+  color: #2563eb; /* azul */
+  text-decoration: none;
+}
+a:hover {
+  color: #1d4ed8;
+}
+
+/* Botones (si los usas fuera de Tailwind) */
+button {
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: #2563eb;
+  color: white;
+  transition: background-color 0.2s ease;
+}
+button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Evita estilos oscuros automáticos */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: light; /* fuerza modo claro */
+  }
+}
+
