@@ -19,7 +19,8 @@ export default function SRIConsulta() {
     setResults(null);
 
     const apiBaseUrl = import.meta.env.VITE_SRI_API_URL;
-    const denominacion = `${nombres.trim()} ${apellidos.trim()}`;
+    
+    const denominacion = `${apellidos.trim().toUpperCase()} ${nombres.trim().toUpperCase()}`;
     const url = `${apiBaseUrl}${encodeURIComponent(denominacion)}/?tipoPersona=N&resultados=30`;
 
     try {
