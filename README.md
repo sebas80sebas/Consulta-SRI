@@ -2,8 +2,6 @@
 
 Sistema de consulta de contribuyentes registrados en el Servicio de Rentas Internas (SRI) de Ecuador.
 
----
-
 ## Descripción
 
 **Consulta SRI** es una aplicación web que permite buscar información de contribuyentes registrados en el SRI de Ecuador mediante sus nombres y apellidos. La aplicación consulta datos públicos y presenta información detallada sobre razón social, identificación, actividad económica, establecimientos y más.
@@ -155,13 +153,23 @@ cd frontend
 npm run build
 ```
 
----
+## Aviso Importante y Descargo de Responsabilidad
+
+**Fuentes de Información y Datos Públicos:** Esta aplicación, Consulta SRI, está diseñada únicamente para consultar y presentar datos públicos de contribuyentes registrados en el Servicio de Rentas Internas (SRI) de Ecuador, accesibles a través de métodos de consulta disponibles públicamente. La aplicación no accede a información privada o confidencial.
+
+**Responsabilidad de la API de Consulta:** La aplicación no es la fuente original ni la responsable de la disponibilidad o exposición pública de la API de consulta del SRI. El endpoint utilizado en el backend se basa en una interfaz de consulta pública existente. La responsabilidad por la arquitectura, la seguridad y la exposición al público de sus propios servicios de consulta recae en la entidad emisora de dichos servicios.
+
+**Gestión de Credenciales (si aplica):** Para la consulta de datos, el backend utiliza un endpoint que, si requiere alguna clave de acceso o URL específica (distinta a la pública), está gestionado exclusivamente mediante variables de entorno privadas y no se expone en el código fuente de esta aplicación.
+
+**Propósito de la Aplicación:** El objetivo de Consulta SRI es proveer una interfaz de usuario moderna y mejorada para facilitar la búsqueda de información pública, sin modificar, almacenar o monetizar de forma indebida los datos consultados.
+
+
 
 # SRI Ecuador Query System
 
 Tax contributor query system for Ecuador's Internal Revenue Service (SRI).
 
----
+
 
 ## Description
 
@@ -305,5 +313,13 @@ cd frontend
 npm run build
 ```
 
----
+## Important Notice and Disclaimer
+
+**Information Sources and Public Data:** This application, Consulta SRI, is designed solely to query and present public data of taxpayers registered with Ecuador's Internal Revenue Service (SRI), accessible through publicly available query methods. The application does not access private or confidential information.
+
+**Responsibility for the Query API:** The application is neither the original source nor responsible for the availability or public exposure of the SRI query API. The endpoint used in the backend is based on an existing public query interface. The responsibility for the architecture, security, and public exposure of its own query services rests with the entity that issues those services.
+
+**Credential Management (if applicable):** For data querying, the backend uses an endpoint which, if it requires any specific access key or URL (distinct from the public one), is managed exclusively through private environment variables and is not exposed in this application's source code.
+
+**Application Purpose:** The objective of Consulta SRI is to provide a modern and improved user interface to facilitate the search for public information, without improperly modifying, storing, or monetizing the queried data.
 
