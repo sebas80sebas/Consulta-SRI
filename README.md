@@ -140,10 +140,10 @@ GET /sri?nombres=JUAN%20CARLOS&apellidos=GARCIA%20LOPEZ
 ## Capturas de Pantalla
 
 ### Pantalla de Búsqueda
-![Búsqueda](docs/search-screen.png)
+![Búsqueda](img/web.png)
 
 ### Resultados
-![Resultados](docs/results-screen.png)
+![Resultados](img/results.jpg)
 
 ---
 
